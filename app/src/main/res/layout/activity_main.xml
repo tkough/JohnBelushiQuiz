@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:context="com.example.android.johnbelushiquiz.MainActivity">
+
+        <ImageView
+            android:id="@+id/photo_image_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/johnbelushi1" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name?"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="What Year Was John Belushi Born?" />
+
+        <EditText
+            android:id="@+id/what_Year_Was_John_Belushi_Born"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Answer"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="How Old Was John Belushi When He Died?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radio_one_correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="33"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/radio_one_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="43"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/radio_one_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/radio_one_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="What TV Show Did John Belushi Star on from 1974-79" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radio_two_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mash"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/radio_two_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Happy Days"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/radio_two_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carol Burnett Show"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <RadioButton
+                android:id="@+id/radio_two_correct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saturday Night Live"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="What Movie Did John Belshi Star as Jake Blues?" />
+
+        <CheckBox
+            android:id="@+id/checkbox_three_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Animal House"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_three_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Neighbors"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_three_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Goin' South"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_three_b_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="The Blues Brothers"
+            android:textSize="16sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="submitScore"
+        android:text="Submit" />
+
+    </LinearLayout>
+
+</ScrollView>
